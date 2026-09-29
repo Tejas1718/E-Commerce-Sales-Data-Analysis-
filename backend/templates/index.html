@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShopKart - Online Shopping</title>
+  <link rel="stylesheet" href="/static/css/style.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-left">
+    <a href="/" class="logo">🛒 ShopKart</a>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search for products, brands and more" oninput="searchProducts(this.value)"/>
+      <button class="search-btn">🔍</button>
+    </div>
+  </div>
+  <div class="nav-right">
+    <a href="/cart" class="nav-btn cart-btn">🛒 Cart <span class="cart-count" id="cartCount">0</span></a>
+    <a href="/admin" class="nav-btn">⚙️ Admin</a>
+  </div>
+</nav>
+
+<!-- BANNER -->
+<div class="banner">
+  <div class="banner-content">
+    <h1>Big Billion Days Sale! 🎉</h1>
+    <p>Up to 80% off on Electronics, Fashion, Home & More</p>
+    <a href="#products" class="shop-now-btn">Shop Now</a>
+  </div>
+</div>
+
+<!-- CATEGORY FILTER -->
+<div class="container">
+  <div class="category-bar">
+    <button class="cat-btn active" onclick="filterCategory('All', this)">All</button>
+    <button class="cat-btn" onclick="filterCategory('Electronics', this)">📱 Electronics</button>
+    <button class="cat-btn" onclick="filterCategory('Clothing', this)">👕 Clothing</button>
+    <button class="cat-btn" onclick="filterCategory('Home & Kitchen', this)">🏠 Home & Kitchen</button>
+    <button class="cat-btn" onclick="filterCategory('Books', this)">📚 Books</button>
+    <button class="cat-btn" onclick="filterCategory('Beauty', this)">💄 Beauty</button>
+  </div>
+
+  <!-- PRODUCTS GRID -->
+  <h2 class="section-title" id="products">🔥 Best Deals For You</h2>
+  <div class="products-grid" id="productsGrid">
+    <div class="loading">Loading products...</div>
+  </div>
+</div>
+
+<!-- CART SIDEBAR -->
+<div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+<div class="cart-sidebar" id="cartSidebar">
+  <div class="cart-header">
+    <h3>🛒 My Cart</h3>
+    <button onclick="toggleCart()" class="close-btn">✕</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-footer">
+    <div class="cart-total">Total: <strong id="cartTotal">₹0</strong></div>
+    <button class="place-order-btn" onclick="placeOrder()">Place Order</button>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<!-- ORDER MODAL -->
+<div class="modal-overlay" id="orderModal">
+  <div class="modal order-modal">
+    <div class="order-modal-header">
+      <span>🛒 Place Your Order</span>
+      <button onclick="closeOrderModal()" class="close-btn">✕</button>
+    </div>
+    <div class="form-group">
+      <label>Your Name</label>
+      <input type="text" id="orderName" placeholder="e.g. Rahul Sharma" />
+    </div>
+    <div class="form-group">
+      <label>Region</label>
+      <select id="orderRegion">
+        <option value="West">West</option>
+        <option value="North">North</option>
+        <option value="South">South</option>
+        <option value="East">East</option>
+      </select>
+    </div>
+    <div class="order-summary" id="orderSummary"></div>
+    <div class="modal-actions">
+      <button class="btn-cancel" onclick="closeOrderModal()">Cancel</button>
+      <button class="btn-save" onclick="confirmOrder()">✅ Confirm Order</button>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div><h4>ShopKart</h4><p>MCA II Research Project | SPPU 2026</p></div>
+    <div><h4>Categories</h4><p>Electronics · Clothing · Books · Beauty</p></div>
+    <div><h4>Help</h4><p>Orders · Returns · Contact</p></div>
+  </div>
+  <p class="footer-bottom">© 2024 ShopKart. All rights reserved.</p>
+</footer>
+
+<script src="/static/js/main.js"></script>
+</body>
+</html>

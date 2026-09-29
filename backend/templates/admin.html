@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Panel - ShopKart</title>
+  <link rel="stylesheet" href="/static/css/style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-left">
+    <a href="/" class="logo">🛒 ShopKart</a>
+    <span style="color:#fff;opacity:0.7;margin-left:12px;">Admin Panel</span>
+  </div>
+  <div class="nav-right">
+    <a href="/" class="nav-btn">🏠 Store</a>
+  </div>
+</nav>
+
+<div class="admin-layout">
+
+  <!-- Sidebar -->
+  <div class="admin-sidebar">
+    <div class="admin-nav-item active" onclick="showTab('dashboard',this)">📊 Dashboard</div>
+    <div class="admin-nav-item" onclick="showTab('products',this)">📦 Products</div>
+    <div class="admin-nav-item" onclick="showTab('orders',this)">🧾 Orders</div>
+  </div>
+
+  <!-- Content -->
+  <div class="admin-content">
+
+    <!-- DASHBOARD TAB -->
+    <div class="tab active" id="tab-dashboard">
+      <h2 class="admin-title">Sales Dashboard</h2>
+      <div class="stat-cards">
+        <div class="stat-card blue"><p class="stat-label">Total Revenue</p><p class="stat-value" id="totalSales">—</p></div>
+        <div class="stat-card green"><p class="stat-label">Total Profit</p><p class="stat-value" id="totalProfit">—</p></div>
+        <div class="stat-card orange"><p class="stat-label">Profit Margin</p><p class="stat-value" id="profitMargin">—</p></div>
+        <div class="stat-card purple"><p class="stat-label">Total Orders</p><p class="stat-value" id="totalOrders">—</p></div>
+        <div class="stat-card red"><p class="stat-label">Customers</p><p class="stat-value" id="totalCustomers">—</p></div>
+      </div>
+      <div class="charts-row">
+        <div class="chart-card"><h4>Sales by Category</h4><canvas id="catChart"></canvas></div>
+        <div class="chart-card"><h4>Payment Mode</h4><canvas id="payChart"></canvas></div>
+      </div>
+      <div class="charts-row">
+        <div class="chart-card wide"><h4>Monthly Sales Trend</h4><canvas id="monthChart"></canvas></div>
+      </div>
+      <div class="charts-row">
+        <div class="chart-card wide"><h4>Top 10 Products</h4><canvas id="topChart"></canvas></div>
+      </div>
+    </div>
+
+    <!-- PRODUCTS TAB -->
+    <div class="tab" id="tab-products">
+      <div class="tab-header">
+        <h2 class="admin-title">Products</h2>
+        <button class="add-btn" onclick="openProductModal()">+ Add Product</button>
+      </div>
+      <input class="admin-search" type="text" placeholder="🔍 Search products..." oninput="filterProducts(this.value)"/>
+      <div class="admin-table-wrap">
+        <table class="admin-table">
+          <thead><tr><th>#</th><th>Product</th><th>Category</th><th>Sub Category</th><th>Price</th><th>Stock</th><th>Actions</th></tr></thead>
+          <tbody id="productsBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ORDERS TAB -->
+    <div class="tab" id="tab-orders">
+      <h2 class="admin-title">Orders</h2>
+      <input class="admin-search" type="text" placeholder="🔍 Search orders..." oninput="filterOrders(this.value)"/>
+      <div class="admin-table-wrap">
+        <table class="admin-table">
+          <thead><tr><th>#</th><th>Date</th><th>Customer</th><th>Product</th><th>Category</th><th>Region</th><th>Sales</th><th>Profit</th><th>Payment</th></tr></thead>
+          <tbody id="ordersBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Product Modal -->
+<div class="modal-overlay" id="productModal">
+  <div class="modal">
+    <h3 id="modalTitle">Add Product</h3>
+    <input type="hidden" id="editId"/>
+    <div class="form-group"><label>Product Name</label><input type="text" id="pName" placeholder="e.g. iPhone 15"/></div>
+    <div class="form-row">
+      <div class="form-group"><label>Category</label>
+        <select id="pCat"><option>Electronics</option><option>Clothing</option><option>Home & Kitchen</option><option>Books</option><option>Beauty</option></select>
+      </div>
+      <div class="form-group"><label>Sub Category</label><input type="text" id="pSub" placeholder="e.g. Mobile"/></div>
+    </div>
+    <div class="form-row">
+      <div class="form-group"><label>Price (₹)</label><input type="number" id="pPrice" placeholder="0"/></div>
+      <div class="form-group"><label>Stock</label><input type="number" id="pStock" placeholder="0"/></div>
+    </div>
+    <div class="form-group">
+      <label>Product Image</label>
+      <div class="image-upload-box" onclick="document.getElementById('pImage').click()">
+        <img id="imagePreview" src="" alt="" style="display:none;width:100%;height:140px;object-fit:contain;border-radius:6px;"/>
+        <div id="uploadPlaceholder">
+          <div style="font-size:2.5rem;">📷</div>
+          <div style="color:#888;font-size:0.85rem;margin-top:6px;">Click to upload image</div>
+          <div style="color:#aaa;font-size:0.75rem;">PNG, JPG, JPEG, WEBP</div>
+        </div>
+      </div>
+      <input type="file" id="pImage" accept="image/*" style="display:none" onchange="previewImage(this)"/>
+      <p id="currentImageNote" style="font-size:0.75rem;color:#888;margin-top:4px;display:none;">✅ Image already uploaded</p>
+    </div>
+    <div class="modal-actions">
+      <button class="btn-cancel" onclick="closeModal()">Cancel</button>
+      <button class="btn-save" onclick="saveProduct()">Save</button>
+    </div>
+  </div>
+</div>
+
+<script src="/static/js/admin.js"></script>
+</body>
+</html>

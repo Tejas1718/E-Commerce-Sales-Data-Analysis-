@@ -1,0 +1,61 @@
+Order_ID,Order_Date,Customer_ID,Customer_Name,Category,Sub_Category,Product_Name,Region,State,City,Sales,Quantity,Discount,Profit,Payment_Mode
+1001,2024-01-05,C001,Rahul Sharma,Electronics,Mobile,Samsung Galaxy A54,West,Maharashtra,Mumbai,25000,1,0.05,4500,Online
+1002,2024-01-07,C002,Priya Patil,Clothing,Kurta,Cotton Kurta Set,West,Maharashtra,Pune,1200,2,0.10,300,COD
+1003,2024-01-10,C003,Amit Desai,Electronics,Laptop,HP Pavilion 15,South,Karnataka,Bangalore,55000,1,0.00,8000,Online
+1004,2024-01-12,C004,Sneha Joshi,Home & Kitchen,Cookware,Prestige Pressure Cooker,North,Delhi,New Delhi,2500,1,0.05,500,UPI
+1005,2024-01-15,C005,Vikram Singh,Electronics,TV,LG 43 inch Smart TV,North,Uttar Pradesh,Lucknow,32000,1,0.08,5000,EMI
+1006,2024-01-18,C006,Anjali Mehta,Books,Academic,Data Science Handbook,East,West Bengal,Kolkata,800,3,0.00,200,Online
+1007,2024-01-20,C007,Rohan Kulkarni,Clothing,Jeans,Levi's 511 Slim Fit,West,Maharashtra,Nashik,3500,1,0.10,700,COD
+1008,2024-01-22,C008,Pooja Nair,Beauty,Skincare,Lakme Face Wash,South,Kerala,Kochi,450,4,0.05,120,UPI
+1009,2024-01-25,C009,Suresh Reddy,Electronics,Mobile,iPhone 14,South,Telangana,Hyderabad,75000,1,0.00,12000,EMI
+1010,2024-01-28,C010,Kavita Rao,Home & Kitchen,Furniture,Wooden Study Table,South,Karnataka,Mysore,8500,1,0.05,1500,Online
+1011,2024-02-02,C011,Deepak Verma,Electronics,Laptop,Dell Inspiron 15,North,Punjab,Chandigarh,48000,1,0.05,7000,EMI
+1012,2024-02-05,C012,Meena Iyer,Clothing,Saree,Silk Saree,South,Tamil Nadu,Chennai,5500,2,0.10,1100,COD
+1013,2024-02-08,C013,Arjun Pandey,Books,Fiction,The Alchemist,North,Rajasthan,Jaipur,350,2,0.00,80,Online
+1014,2024-02-10,C014,Sunita Gupta,Beauty,Haircare,Dove Shampoo 700ml,North,Delhi,New Delhi,380,5,0.05,90,UPI
+1015,2024-02-14,C015,Nikhil Jain,Electronics,Tablet,iPad Air,West,Gujarat,Ahmedabad,60000,1,0.00,9000,EMI
+1016,2024-02-18,C016,Ritu Sharma,Home & Kitchen,Cookware,Hawkins Cooker,West,Maharashtra,Mumbai,1800,2,0.05,400,COD
+1017,2024-02-20,C017,Manish Tiwari,Clothing,T-Shirt,Nike Dri-FIT,North,Uttar Pradesh,Agra,1200,3,0.10,300,Online
+1018,2024-02-22,C018,Lakshmi Pillai,Beauty,Skincare,Neutrogena Moisturizer,South,Kerala,Trivandrum,650,2,0.05,150,UPI
+1019,2024-02-25,C019,Gaurav Mishra,Electronics,Mobile,OnePlus 11,East,Bihar,Patna,45000,1,0.05,7500,Online
+1020,2024-02-28,C020,Swati Bhatt,Books,Self-Help,Atomic Habits,West,Gujarat,Surat,500,1,0.00,120,COD
+1021,2024-03-03,C021,Kiran Naik,Electronics,TV,Sony Bravia 55,West,Goa,Panaji,65000,1,0.05,10000,EMI
+1022,2024-03-06,C022,Pallavi Deshpande,Clothing,Dress,Floral Maxi Dress,West,Maharashtra,Pune,2200,1,0.10,440,Online
+1023,2024-03-10,C023,Rajesh Kumar,Home & Kitchen,Furniture,Sofa Set 3+1+1,North,Delhi,New Delhi,35000,1,0.00,5000,EMI
+1024,2024-03-12,C024,Anita Sinha,Beauty,Makeup,Maybelline Foundation,East,Jharkhand,Ranchi,750,3,0.05,180,UPI
+1025,2024-03-15,C025,Sanjay Pawar,Electronics,Laptop,Lenovo IdeaPad,West,Maharashtra,Kolhapur,42000,1,0.05,6500,Online
+1026,2024-03-18,C026,Divya Menon,Books,Academic,Machine Learning by Mitchell,South,Karnataka,Bangalore,1200,1,0.00,300,Online
+1027,2024-03-20,C027,Aakash Yadav,Clothing,Shoes,Nike Air Max,North,Haryana,Gurgaon,7500,1,0.10,1500,COD
+1028,2024-03-22,C028,Neha Kulkarni,Home & Kitchen,Appliances,Philips Air Fryer,West,Maharashtra,Mumbai,8000,1,0.05,1200,EMI
+1029,2024-03-25,C029,Tushar Gaikwad,Electronics,Mobile,Redmi Note 12,West,Maharashtra,Aurangabad,18000,2,0.05,3000,UPI
+1030,2024-03-28,C030,Shweta Joshi,Beauty,Skincare,The Ordinary Serum,West,Maharashtra,Pune,1500,2,0.05,350,Online
+1031,2024-04-02,C031,Mahesh Bhosale,Electronics,Mobile,Vivo V27,West,Maharashtra,Nagpur,22000,1,0.05,3800,COD
+1032,2024-04-05,C032,Rekha Pillai,Clothing,Kurta,Anarkali Suit,South,Kerala,Kochi,3800,1,0.10,760,Online
+1033,2024-04-08,C033,Vinod Sharma,Home & Kitchen,Cookware,Butterfly Gas Stove,North,Delhi,New Delhi,4500,1,0.05,800,UPI
+1034,2024-04-10,C034,Priyanka Desai,Books,Fiction,Harry Potter Set,West,Maharashtra,Mumbai,2500,1,0.00,600,Online
+1035,2024-04-14,C035,Sachin Patil,Electronics,Laptop,Asus VivoBook,West,Maharashtra,Pune,38000,1,0.05,5500,EMI
+1036,2024-04-18,C036,Geeta Nair,Beauty,Haircare,Pantene Pro-V,South,Tamil Nadu,Coimbatore,320,4,0.05,80,COD
+1037,2024-04-20,C037,Harish Reddy,Clothing,Jeans,Wrangler Regular Fit,South,Andhra Pradesh,Vijayawada,2800,2,0.10,560,UPI
+1038,2024-04-22,C038,Smita Wagh,Home & Kitchen,Furniture,Dining Table 6 Seater,West,Maharashtra,Nashik,22000,1,0.00,3500,EMI
+1039,2024-04-25,C039,Nilesh Jadhav,Electronics,TV,Mi 32 inch HD,West,Maharashtra,Solapur,12000,1,0.08,2000,Online
+1040,2024-04-28,C040,Archana Kulkarni,Books,Self-Help,Think and Grow Rich,West,Maharashtra,Pune,400,2,0.00,100,COD
+1041,2024-05-02,C041,Pramod Shinde,Electronics,Mobile,Samsung Galaxy S23,West,Maharashtra,Mumbai,80000,1,0.00,14000,EMI
+1042,2024-05-05,C042,Vaishali Pawar,Clothing,Saree,Chiffon Saree,West,Maharashtra,Pune,2800,1,0.10,560,Online
+1043,2024-05-08,C043,Santosh Mane,Home & Kitchen,Appliances,Bajaj Mixer Grinder,West,Maharashtra,Kolhapur,3200,1,0.05,600,UPI
+1044,2024-05-10,C044,Rupali Jadhav,Beauty,Makeup,Lakme Lipstick Set,West,Maharashtra,Aurangabad,1200,3,0.05,280,COD
+1045,2024-05-14,C045,Amol Deshmukh,Electronics,Laptop,MacBook Air M2,West,Maharashtra,Pune,110000,1,0.00,18000,Online
+1046,2024-05-18,C046,Sushma Rao,Books,Academic,Python Programming,South,Karnataka,Bangalore,850,2,0.00,200,Online
+1047,2024-05-20,C047,Rajan Iyer,Clothing,T-Shirt,Adidas Originals,South,Tamil Nadu,Chennai,1800,2,0.10,360,UPI
+1048,2024-05-22,C048,Madhuri Patil,Home & Kitchen,Cookware,Wonderchef Cookware Set,West,Maharashtra,Mumbai,6500,1,0.05,1100,EMI
+1049,2024-05-25,C049,Sunil Bhatt,Electronics,Mobile,Google Pixel 7,West,Gujarat,Ahmedabad,55000,1,0.05,9000,Online
+1050,2024-05-28,C050,Nandini Sharma,Beauty,Skincare,Himalaya Face Pack,North,Delhi,New Delhi,280,5,0.05,70,COD
+1051,2024-06-02,C051,Anil Wadekar,Electronics,TV,Samsung 50 inch 4K,West,Maharashtra,Pune,45000,1,0.05,7500,EMI
+1052,2024-06-05,C052,Sunanda Kulkarni,Clothing,Dress,Ethnic Wear Set,West,Maharashtra,Mumbai,4500,1,0.10,900,Online
+1053,2024-06-08,C053,Ganesh Pawar,Home & Kitchen,Furniture,Bookshelf Wooden,West,Maharashtra,Nashik,5500,1,0.05,900,UPI
+1054,2024-06-10,C054,Lata Desai,Books,Fiction,Wings of Fire,West,Maharashtra,Pune,350,3,0.00,90,COD
+1055,2024-06-14,C055,Hemant Joshi,Electronics,Laptop,HP Spectre x360,West,Maharashtra,Mumbai,95000,1,0.00,15000,EMI
+1056,2024-06-18,C056,Bharati Naik,Beauty,Haircare,Biotique Bio Kelp,West,Goa,Panaji,450,3,0.05,110,Online
+1057,2024-06-20,C057,Yogesh Shinde,Clothing,Shoes,Puma Running Shoes,West,Maharashtra,Pune,4500,1,0.10,900,UPI
+1058,2024-06-22,C058,Chhaya Mane,Home & Kitchen,Appliances,Havells Iron,West,Maharashtra,Kolhapur,1800,2,0.05,360,COD
+1059,2024-06-25,C059,Dhananjay Rao,Electronics,Mobile,Motorola Edge 40,West,Maharashtra,Aurangabad,28000,1,0.05,4800,Online
+1060,2024-06-28,C060,Ujwala Patil,Books,Self-Help,The Power of Now,West,Maharashtra,Pune,450,1,0.00,110,EMI

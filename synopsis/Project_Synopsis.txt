@@ -1,0 +1,145 @@
+================================================================================
+              RESEARCH PROJECT SYNOPSIS
+              MCA II - SEMESTER III (2026)
+              SAVITRIBAI PHULE PUNE UNIVERSITY (SPPU)
+================================================================================
+
+PROJECT TITLE:
+  E-Commerce Sales Data Analysis Using Python and Power BI
+
+STUDENT NAME    : [Your Full Name]
+PRN / Roll No.  : [Your PRN]
+Department      : Master of Computer Applications (MCA)
+Academic Year   : 2025-2026
+Project Guide   : [Guide Name]
+Submission Date : On or Before 30th September 2026
+
+--------------------------------------------------------------------------------
+1. INTRODUCTION
+--------------------------------------------------------------------------------
+E-commerce has transformed the way businesses operate globally. With millions of
+transactions happening daily, analyzing sales data has become critical for
+business decision-making. This project focuses on analyzing e-commerce sales
+data to extract meaningful insights about sales trends, customer behavior,
+product performance, and regional distribution.
+
+--------------------------------------------------------------------------------
+2. PROBLEM STATEMENT
+--------------------------------------------------------------------------------
+Businesses generate large volumes of sales data but often lack the tools and
+techniques to analyze it effectively. This project aims to analyze e-commerce
+sales data to identify:
+  - Which product categories generate the most revenue and profit
+  - Monthly and seasonal sales trends
+  - Regional performance differences
+  - Impact of discounts on profitability
+  - Most preferred payment modes by customers
+
+--------------------------------------------------------------------------------
+3. OBJECTIVES
+--------------------------------------------------------------------------------
+  1. To collect and preprocess e-commerce sales data
+  2. To perform Exploratory Data Analysis (EDA) using Python
+  3. To visualize key metrics using charts and graphs
+  4. To build an interactive dashboard using Power BI
+  5. To derive actionable business insights from the analysis
+
+--------------------------------------------------------------------------------
+4. SCOPE OF THE PROJECT
+--------------------------------------------------------------------------------
+  - Data covers orders from January 2024 to June 2024
+  - Includes 60 transactions across 6 product categories
+  - Covers 4 regions: North, South, East, West (India)
+  - Analysis includes sales, profit, discount, and payment mode
+
+--------------------------------------------------------------------------------
+5. TECHNOLOGY STACK
+--------------------------------------------------------------------------------
+  Programming Language : Python 3.x
+  Libraries Used       : Pandas, Matplotlib, Seaborn
+  Visualization Tool   : Microsoft Power BI Desktop
+  Data Format          : CSV (Comma Separated Values)
+  IDE                  : VS Code / Jupyter Notebook
+
+--------------------------------------------------------------------------------
+6. METHODOLOGY
+--------------------------------------------------------------------------------
+  Phase 1 - Data Collection
+    Prepared a structured dataset with 60 e-commerce sales records containing
+    fields: Order ID, Date, Customer, Category, Region, Sales, Profit,
+    Discount, Quantity, Payment Mode.
+
+  Phase 2 - Data Preprocessing
+    - Handled data types (date parsing, numeric fields)
+    - Checked for missing values and duplicates
+    - Created derived columns (Month, Profit Margin)
+
+  Phase 3 - Exploratory Data Analysis (EDA)
+    - Sales and Profit analysis by Category
+    - Monthly Sales Trend analysis
+    - Regional Sales Distribution
+    - Top 10 Products by Revenue
+    - Payment Mode Distribution
+    - Discount vs Profit correlation
+
+  Phase 4 - Visualization
+    - Bar charts, Line charts, Pie charts, Scatter plots using Python
+    - Interactive dashboard in Power BI
+
+  Phase 5 - Insights and Conclusion
+    - Derived business insights from analysis results
+
+--------------------------------------------------------------------------------
+7. EXPECTED OUTCOMES / KEY FINDINGS
+--------------------------------------------------------------------------------
+  1. Electronics category contributes the highest revenue (~60% of total sales)
+  2. Maharashtra region dominates sales among all states
+  3. Monthly sales show an upward trend from January to June 2024
+  4. Higher discounts (>10%) negatively impact profit margins
+  5. Online and EMI are the most preferred payment modes
+  6. MacBook Air M2 and iPhone 14 are top revenue-generating products
+
+--------------------------------------------------------------------------------
+8. SYSTEM REQUIREMENTS
+--------------------------------------------------------------------------------
+  Hardware:
+    - Processor  : Intel Core i3 or above
+    - RAM        : 4 GB minimum (8 GB recommended)
+    - Storage    : 10 GB free space
+
+  Software:
+    - Python 3.8+
+    - Microsoft Power BI Desktop (Free)
+    - VS Code or Jupyter Notebook
+
+--------------------------------------------------------------------------------
+9. PROJECT DELIVERABLES
+--------------------------------------------------------------------------------
+  1. ecommerce_sales.csv         - Dataset
+  2. ecommerce_analysis.py       - Python Analysis Script
+  3. analysis/charts/            - 8 Visualization Charts
+  4. Power BI Dashboard (.pbix)  - Interactive Dashboard
+  5. Project Report (PDF)        - Final Documentation
+  6. Synopsis (This Document)
+
+--------------------------------------------------------------------------------
+10. REFERENCES
+--------------------------------------------------------------------------------
+  1. McKinney, W. (2022). Python for Data Analysis. O'Reilly Media.
+  2. VanderPlas, J. (2016). Python Data Science Handbook. O'Reilly Media.
+  3. Pandas Documentation - https://pandas.pydata.org/docs/
+  4. Seaborn Documentation - https://seaborn.pydata.org/
+  5. Power BI Documentation - https://learn.microsoft.com/en-us/power-bi/
+  6. Kaggle E-Commerce Datasets - https://www.kaggle.com/datasets
+
+================================================================================
+                        GUIDE APPROVAL
+================================================================================
+
+Project Guide Signature : ____________________
+
+Date                    : ____________________
+
+Remarks                 : ____________________
+
+================================================================================
